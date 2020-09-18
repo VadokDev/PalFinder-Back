@@ -6,5 +6,5 @@ COPY .env.example /app/.env
 RUN apk --no-cache add --virtual builds-deps build-base python
 RUN yarn install
 
-EXPOSE 8080
-CMD ["yarn", "run", "dev"]
+EXPOSE 80
+CMD ["yarn", "start"]
